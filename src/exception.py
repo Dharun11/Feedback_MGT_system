@@ -1,6 +1,6 @@
 import sys
-
-def error_detail(error,error_detail:sys):
+from logger import logging
+def error_mesg_detail(error,error_detail:sys):
     _,_,exec_tb=error_detail.exc_info()
     
     ## gettig the file name
@@ -13,7 +13,17 @@ def error_detail(error,error_detail:sys):
 class CustomException(Exception):
     def __init__(self,error,error_detail:sys):
         super().__init__(error)
-        self.error_message=error_detail(error,error_detail)
+        self.error=error_mesg_detail(error,error_detail)
         
     def __str__(self):
-        return self.error_message
+        return self.error
+    
+'''
+if __name__=="__main__":
+    try:
+        a=10/0
+    except Exception as e:
+        logging.info("This cant be done since it is division by zero")
+        raise CustomException(e,sys)
+
+'''
