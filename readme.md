@@ -66,6 +66,3 @@ This project is a web-based feedback sentiment analysis system built using Flask
 - View previous feedbacks and their sentiment on the home page.
 - Delete all feedback records using the "Delete records" button.
 
-## License
-
-This project is licensed under the MIT License.
