@@ -12,6 +12,18 @@ This project is a web-based feedback sentiment analysis system built using Flask
 
 ![alt text](image.png)
 
+
+## Tech Stack
+
+- **Backend**: Flask
+- **Frontend**: HTML, CSS
+- **Database**: SQLite
+- **API**: Groq API
+- **Logging**: Python logging module
+- **Environment Management**: Python venv
+- **Version Control**: Git
+
+
 ## Project Structure
 
 - `app.py`: Main Flask application file.
