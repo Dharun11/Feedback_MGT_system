@@ -9,6 +9,9 @@ This project is a web-based feedback sentiment analysis system built using Flask
 - Display previous feedbacks along with their sentiment.
 - Delete all feedback records.
 
+
+![alt text](image.png)
+
 ## Project Structure
 
 - `app.py`: Main Flask application file.
