@@ -22,6 +22,45 @@ This project is a web-based feedback sentiment analysis system built using Flask
   - `sentiment.py`: Sentiment analysis using Groq API.
 - `templates/`: HTML templates for the web application.
 
+## Database Schema
+
+The database schema consists of a single table named `feedback` with the following columns:
+
+- `id`: INTEGER PRIMARY KEY AUTOINCREMENT
+- `name`: TEXT NOT NULL
+- `email`: TEXT NOT NULL
+- `feedback`: TEXT NOT NULL
+- `sentiment`: TEXT
+
+## Database Queries
+
+- Create the `feedback` table:
+    ```sql
+    CREATE TABLE IF NOT EXISTS feedback (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT NOT NULL,
+        feedback TEXT NOT NULL,
+        sentiment TEXT
+    );
+    ```
+
+- Insert a new feedback record:
+    ```sql
+    INSERT INTO feedback (name, email, feedback, sentiment) VALUES (?, ?, ?, ?);
+    ```
+
+- Select all feedback records:
+    ```sql
+    SELECT * FROM feedback;
+    ```
+
+- Delete all feedback records:
+    ```sql
+    DELETE FROM feedback;
+    ```
+
+
 ## Setup
 
 1. Clone the repository:
