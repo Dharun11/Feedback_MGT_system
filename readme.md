@@ -26,14 +26,14 @@ This project is a web-based feedback sentiment analysis system built using Flask
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Dharun11/Feedback_MGT_system.git
+    cd feedback_mgt
     ```
 
 2. Create and activate a virtual environment:
     ```sh
     python -m venv myenv
-    source myenv/bin/activate  # On Windows use `myenv\Scripts\activate`
+    myenv\Scripts\activate  
     ```
 
 3. Install the dependencies:
